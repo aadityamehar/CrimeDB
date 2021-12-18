@@ -1,4 +1,28 @@
-{% extends "login.html" %}
-{% block content %}
-<h1>Welcome {{pas}}</h1>>
+{% extends "logged.html" %}
+{% block name %}
+<h1>Welcome {{pas[1]}}</h1>
+{% endblock %}
+{% block table %}
+<div class="container">
+    <div class="row">
+
+        <table class="table table-striped">
+            <tr>
+                <th>Crime ID</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Description</th>    
+            </tr>    
+    {% for pae in paes %}
+<tr>
+    <td>{{pae[0]}}</td>
+    <td>{{pae[1]}}</td>
+    <td>{{pae[2]}}</td>
+    <td>{{pae[3]}}</td>
+</tr>
+    {% endfor%}
+    </table>
+    </div>
+    </div>
+
 {% endblock %}

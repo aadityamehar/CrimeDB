@@ -1,0 +1,27 @@
+{% extends "logged.html" %}
+{% block name %}<h1>Welcome {{name[1]}}</h1> {% endblock %}
+{% block table %}
+
+<table class="table table-striped">
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Phone No.</th>
+            <th>Email</th>
+            <th>Rank</th>
+
+        </tr>    
+    {% for pae in paes %}
+<tr>
+    <td>{{pae[0]}}</td>
+    <td>{{pae[1]}}</td>
+    <td>{{pae[2]}}</td>
+    <td>{{pae[4]}}</td>
+    <td>{{pae[5]}}</td>
+
+
+</tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
