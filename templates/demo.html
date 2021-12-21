@@ -12,6 +12,8 @@
                 <th>Date</th>
                 <th>Location</th>
                 <th>Description</th>    
+                <th>Court ID</th>   
+                <th>Status</th> 
             </tr>    
     {% for pae in paes %}
 <tr>
@@ -19,10 +21,15 @@
     <td>{{pae[1]}}</td>
     <td>{{pae[2]}}</td>
     <td>{{pae[3]}}</td>
+    <td>{{pae[5]}}</td>
+    <td>{{pae[6]}}</td>
+
 </tr>
     {% endfor%}
     </table>
     </div>
     </div>
+<a href="http://127.0.0.1:5000/addCrime">Add another?</a><br>
+<a href="http://127.0.0.1:5000/closeCrime">Close a case?</a>
 
 {% endblock %}

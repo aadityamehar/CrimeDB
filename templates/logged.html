@@ -8,11 +8,11 @@
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
         <a
-          href="#"
+          href="http://127.0.0.1:5000/dashboard"
           class="list-group-item list-group-item-action py-2 ripple"
           aria-current="true"
         >
-          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
         </a>
         <a href="http://127.0.0.1:5000/crime" class="list-group-item list-group-item-action py-2 ripple">
           <i class="fas fa-chart-area fa-fw me-3"></i><span>Crime</span>
@@ -20,9 +20,20 @@
         <a href="http://127.0.0.1:5000/criminals" class="list-group-item list-group-item-action py-2 ripple"
           ><i class="fas fa-lock fa-fw me-3"></i><span>Criminals</span></a
         >
+        <a href="http://127.0.0.1:5000/victims" class="list-group-item list-group-item-action py-2 ripple"
+        ><i class="fas fa-chart-line fa-fw me-3"></i><span>Victims</span></a
+      >
+      <a href="http://127.0.0.1:5000/crimeVictims" class="list-group-item list-group-item-action py-2 ripple"
+        ><i class="fas fa-chart-line fa-fw me-3"></i><span>Victims and Crimes</span></a
+      >
+      <a href="http://127.0.0.1:5000/crimeCriminals" class="list-group-item list-group-item-action py-2 ripple"
+        ><i class="fas fa-chart-line fa-fw me-3"></i><span>Criminals and Crimes</span></a
+      >
         <a href="http://127.0.0.1:5000/fir" class="list-group-item list-group-item-action py-2 ripple"
           ><i class="fas fa-chart-line fa-fw me-3"></i><span>FIRs</span></a
         >
+        <a href="http://127.0.0.1:5000/courts" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Courts</span></a>
         <a href="http://127.0.0.1:5000/prisons" class="list-group-item list-group-item-action py-2 ripple">
           <i class="fas fa-chart-pie fa-fw me-3"></i><span>Prisons</span>
         </a>
@@ -43,5 +54,5 @@
 
 </div>
 
-<a href="http://127.0.0.1:5000/addCop">Add another?</a>
+
 {% endblock %}

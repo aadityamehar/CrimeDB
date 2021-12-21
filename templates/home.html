@@ -2,21 +2,15 @@
 {% block content %}
 
 
-  <!-- Navbar -->
-
-  <!-- Navbar -->
-</header>
-<!--Main Navigation-->
-
-<!--Main layout-->
-<main style="margin-top: 58px;">
-  <div class="container pt-4"></div>
+<main class="bg-primary"style=" margin-top: 2px;">
+  <div class="container  pt-4"></div>
 </main>
-<section class="vh-100 gradient-custom">
-  <div class="container py-5 h-100">
+<section class="vh-100 imgbg gradient-custom">
+  <div style=" background-image: url('https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/India/Mumbai/gateway-of-india-mumbai-xlarge.jpg');" class="container imgbg py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
+
       <div class="col-3 col-md-12 col-lg-6 col-xl-5">
-        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+        <div class="card bg-primary opac text-white" style="border-radius: 1rem; opacity: 0.75;   background-color: aqua;">
           <div class="card-body p-5 text-center">
             <form method="post">
             <div class="mb-md-12 mt-md-4 pb-5">
@@ -35,7 +29,6 @@
                 <input type="password" name="pass" id="typePasswordX" class="form-control form-control-lg" placeholder="Password"/>
               </div>
 
-              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
 
               <input href="/dashboard" class="btn btn-outline-light btn-lg px-5" type="submit">
 
@@ -46,6 +39,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </section>
 {% endblock %}

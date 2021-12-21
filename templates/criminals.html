@@ -10,7 +10,6 @@
         <th>DOB</th>
         <th>Date of Indictment</th>
         <th>Incarcerated At</th>
-        <th>Date of Release</th>
     </tr>    
     {% for pae in paes %}
     <tr>
@@ -20,9 +19,8 @@
         <td>{{pae[3]}}</td>
         <td>{{pae[4]}}</td>
         <td>{{pae[5]}}</td>
-        <td>{{pae[6]}}</td>
     </tr>
     {% endfor %}
 </table>
-
+<a href="http://127.0.0.1:5000/addCriminal">Add another?</a>
 {% endblock %}
