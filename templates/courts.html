@@ -1,0 +1,25 @@
+{% extends "logged.html" %}
+{% block name %} <h1>Welcome {{name[1]}}</h1> {% endblock %}
+{% block table %}
+<div class="container">
+    <div class="row">
+<table class="table table-striped">
+    <tr>
+        <th>Court ID</th>
+        <th>Court Name</th>
+        <th>Address</th>
+    </tr>    
+    {% for pae in paes %}
+<tr>
+    <td>{{pae[0]}}</td>
+    <td>{{pae[2]}}</td>
+    <td>{{pae[1]}}</td>
+    
+</tr>
+{% endfor %}
+</table>
+    </div>
+</div>
+<a href="http://127.0.0.1:5000/addCourt">Add another?</a>
+
+{% endblock%}

@@ -1,0 +1,20 @@
+{% extends "logged.html" %}
+{% block table %}
+
+<form method = "POST">
+    <div class="form-group">
+        <label for="">FIR ID</label>
+        <input type="text" name="fid" class="form-control" placeholder="Name">
+      </div>
+  <div class="form-group">
+    <label>Crime ID</label>
+    <input type="text" name="cid" class="form-control" aria-describedby="" placeholder="ID">
+  </div>
+    <div class="form-group">
+    <label> Description</label>
+    <input type="name" name="description" class="form-control" id="" placeholder="Description">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

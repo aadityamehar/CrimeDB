@@ -43,7 +43,7 @@ def crime():
     cur = mysql.connection.cursor()
     cur.execute("SELECT * FROM Crime")
     crime = cur.fetchall()
-    print("incrime",pas)
+    print("incrime", pas)
     return render_template('demo.html', pas=pas, paes=crime)
 
 @app.route("/noUser", methods=['GET', 'POST'])
@@ -121,7 +121,7 @@ def dashboard():
     lococ = cur.fetchall()
     print("incrime",pas)
     return render_template('dashboard.html', name=pas, paes=crimeoc, paes1 = lococ)
-    
+
 @app.route("/addCop", methods = ['GET', 'POST'])
 def addCop():
     if pas[-1] > 1:

@@ -1,0 +1,32 @@
+{% extends "logged.html" %}
+{% block table %}
+
+<form method = "POST">
+  <div class="form-group">
+    <label>ID</label>
+    <input type="text" name="uid" class="form-control" aria-describedby="" placeholder="ID">
+  </div>
+  <div class="form-group">
+    <label for="">Name</label>
+    <input type="text" name="name" class="form-control" placeholder="Name">
+  </div>
+    <div class="form-group">
+    <label>Sentence</label>
+    <input type="name" name="sentence" class="form-control" id="" placeholder="Sentence">
+  </div>
+  <div class="form-group">
+    <label for="">DOB</label>
+    <input type="date" name="dob" class="form-control" id="" placeholder="DOB">
+  </div>
+  <div class="form-group">
+    <label for="">Incarcerated On</label>
+    <input type="date" name="doi" class="form-control" id="" placeholder="DOI">
+  </div>
+    <div class="form-group">
+    <label>Incarcerated At</label>
+    <input type="text" name="address" class="form-control" placeholder="Address">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "logged.html" %}
+{% block name %} <h1>Welcome {{name[1]}}</h1> {% endblock %}
+{% block table %}
+<div class="container">
+    <div class="row">
+<table class="table table-striped">
+    <tr>
+        <th>Crime ID</th>
+        <th>Victim ID</th>
+    </tr>    
+    {% for pae in paes %}
+<tr>
+    <td>{{pae[0]}}</td>
+    <td>{{pae[1]}}</td>
+    
+</tr>
+{% endfor %}
+</table>
+    </div>
+</div>
+
+{% endblock%}

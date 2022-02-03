@@ -1,0 +1,33 @@
+{% extends "logged.html" %}
+{% block name %}<h1>Welcome {{name[1]}}</h1> {% endblock %}
+{% block table %}
+
+<h3>Crime by Type</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Category</th>
+        <th>Occurences</th>
+    </tr>    
+    {% for pae in paes %}
+    <tr>
+        <td>{{pae[0]}}</td>
+        <td>{{pae[1]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<h3>Crime by Area</h3>
+<table class="table table-striped">
+    <tr>
+        <th>Category</th>
+        <th>Occurences</th>
+    </tr>    
+    {% for pae in paes1 %}
+    <tr>
+        <td>{{pae[0]}}</td>
+        <td>{{pae[1]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

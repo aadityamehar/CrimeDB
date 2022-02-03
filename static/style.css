@@ -1,0 +1,30 @@
+#wrap {
+  width:500px;
+  margin:0 auto;
+}
+
+.imgur {
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgbg {
+  object-fit: cover; 
+}
+
+.opac {
+  opacity: 0.9;
+  background-color: aqua;
+}
+
+.bound {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#over {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
