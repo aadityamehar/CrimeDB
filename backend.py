@@ -4,8 +4,8 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '1234'
+app.config['MYSQL_USER'] = 'xxxx'
+app.config['MYSQL_PASSWORD'] = 'xxxx'
 app.config['MYSQL_DB'] = 'CrimeDBfi'
 
 mysql = MySQL(app)
@@ -29,7 +29,7 @@ def login():
                 print(pas)
                 return redirect("/dashboard")
             else:
-                return "lmao slave"
+                return "Error"
         else:
             return redirect("/noUser")
 
